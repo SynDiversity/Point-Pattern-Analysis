@@ -92,4 +92,4 @@ end
 % stat test
 x=[a_nnd_ch2munc_t' b_nnd_ch2munc_t' c_nnd_ch2munc_t' d_nnd_ch2munc_t' rand_ch2munc_nnd_t' NND_ch_to_munc_data'];
 [p,tbl,stat] = kruskalwallis(x);
-c = multcompare(stat,'CType','lsd')
+c = multcompare(stat,'CType','bonferroni')
