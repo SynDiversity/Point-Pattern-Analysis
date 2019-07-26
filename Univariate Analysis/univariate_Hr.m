@@ -2,7 +2,7 @@
 d = dir('/path');
 
 %initialization 
-sims=50; % number of simulations
+sims=100; % number of simulations
 dist=0:10:1000; % spatial scale to calculate H(r)
 min_d=7.1; % set the minimum allowed distnce between poits for pattern generation 
 
@@ -12,7 +12,7 @@ ncols = length(d);
 
 figure, 
 % loop trough all the files in the folder
-for i=1
+for i=1:ncols
     %read file
     [scalebar_x,scalebar_y,synAreax,synAreay,ca_x,ca_y] = importfile_AZ(d(i).name);
     %% normalize locations of both MUNC and CAV and AZ counture
@@ -36,7 +36,7 @@ for i=1
     %% Calculate H(r) for data, CE for randomly sampled patterns
     [H_data(i,:), H_upper(i,:), H_lower(i,:), H_rand_temp]=Hr_fun_sim([ca_x ca_y],are(i),dist,sims,[xp yp],min_d,99);
     %% Calculate H(r) for data, CE for EZ model
-    %ez_sim=2; % number of EZ patterns generated
+    %ez_sim=100; % number of EZ patterns generated
     %ez_rad=50; % radius of EZ
     %num_ves=4; % number of vesicels
     %[H_data(i,:), H_upper(i,:), H_lower(i,:), H_rand_temp]=Hr_fun_sim_ez([ca_x ca_y],are(i),dist,sims,ez_sim,[xp yp],min_d,99,ez_rad,num_ves);
