@@ -4,5 +4,5 @@ Codes for point pattern analysi for the paper "Distinct nanoscale calcium channe
 Input files have to be in .gss formant. 
 
 - Folder"Clustering statistics" contains codes to perform DBSCAN and based on its resutls statistcs on the clusters.
-- Folder "Bivariate Analysis" contrais codes to perfrom bivariate analysis for points of two different labels, including H(r) and mean NND analysis
-- Folder "Univariate Analysis" contrais codes to perfrom Meand NND and H(r) analysis for points of single label
+- Folder "Bivariate Analysis" contais codes to perfrom bivariate analysis for points of two different labels, including H(r) and mean NND analysis
+- Folder "Univariate Analysis" contais codes to perfrom Meand NND and H(r) analysis for points of single label, EZ model and null model; generation of clustered patterns. 
