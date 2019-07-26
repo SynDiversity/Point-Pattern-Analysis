@@ -68,7 +68,7 @@ n_ves=round(ves_num*area/9e4);
 if n_ves>1
      ind=min(20,n_ves + round(-1+2*rand));
 else
-    ind= max(1,n_ves+round(rand));
+    ind= max(1,n_ves);
 end
 
 xu_c=x_ez{1,ind};
